@@ -1,0 +1,71 @@
+html{
+    box-sizing: border-box;
+    max-height: 100%;
+    margin: 0;
+}
+.pannels{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+.pannel{
+    flex: 1;
+    border: 1px solid;
+    text-align: center;
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+    transition: 
+        font-size 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        flex 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        background 0.5s;
+}
+.pannel > * {
+    margin: 0;
+    width: 100%;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.pannel p:first-child{transform: translateY(-100%);}
+.pannel.open-active p:first-child{transform: translateY(0);}
+.pannel p:last-child{transform: translateY(100%);}
+.pannel.open-active p:last-child{transform: translateY(0);}
+
+.pannel.open{
+    flex: 5;
+}
+
+.pannel p{
+    font-family: 'Times New Roman', Times, serif,cursive;
+    font-size: 40px;
+    color: white;
+}
+.pannel1{
+    background-image: url(image/img1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.pannel2{
+    background-image: url(image/img2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.pannel3{
+    background-image: url(image/img3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.pannel4{
+    background-image: url(image/img5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.pannel5{
+    background-image: url(image/img7.jpg);
+    background-position: center;
+    background-size: cover;
+}
